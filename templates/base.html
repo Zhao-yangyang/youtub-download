@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}YouTube Video Downloader{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/static/css/main.css">
+    {% block head %}{% endblock %}
+</head>
+<body class="bg-gray-100">
+    <!-- 导航栏 -->
+    {% include "components/nav.html" %}
+
+    <!-- 主要内容 -->
+    <div class="container mx-auto px-4 py-8">
+        {% block content %}{% endblock %}
+    </div>
+
+    <!-- 错误提示组件 -->
+    {% include "components/error.html" %}
+    
+    <!-- 加载状态组件 -->
+    {% include "components/loading.html" %}
+    
+    <!-- 确认对话框组件 -->
+    {% include "components/confirm.html" %}
+
+    <!-- 公共 JavaScript -->
+    <script src="/static/js/common.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html> 

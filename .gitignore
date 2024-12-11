@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# 项目特定
+downloads/
+static/thumbnails/
+.env
+config.json
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# 日志和临时文件
+*.log
+tmp/
